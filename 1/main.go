@@ -70,6 +70,8 @@ func main() {
 		pp ^= o
 	}
 	fmt.Println(pp)
+
+	switch1()
 }
 
 const (
