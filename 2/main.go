@@ -11,4 +11,10 @@ func main() {
 		}
 		fmt.Println()
 	}
+
+	fmt.Println()
+
+	array1 := []int{1, 3, 5, 7, 8}
+
+	array_special_sum(array1, 8)
 }
