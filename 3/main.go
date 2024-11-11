@@ -8,5 +8,14 @@ func main() {
 	mapone["dgk"] = 95
 	fmt.Println(mapone)
 	fmt.Println(mapone["kdf"])
+	iff, ok := mapone["kdf"]
+	if ok {
+		fmt.Println(iff)
+	} else {
+		fmt.Println("wu")
+	}
 
+	mapsort()
+	examp()
+	numword()
 }
