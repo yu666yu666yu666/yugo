@@ -18,6 +18,7 @@ func a() {
 
 //可以一个类型多接口，可以多个类型一接口，接口可以嵌套接口，接口可以做为结构体一个字段
 
+/*
 func b() {
 
 	var n Mover = &Dog{Name: "旺财"}
@@ -31,6 +32,7 @@ func b() {
 	}
 
 }
+*/
 
 // justifyType 对传入的空接口类型变量x进行类型断言...如果对一个接口值有多个实际类型需要判断，推荐使用switch语句来实现。
 func justifyType(x interface{}) {
