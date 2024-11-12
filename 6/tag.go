@@ -23,5 +23,5 @@ func tag() {
 		fmt.Println("json marshal failed!")
 		return
 	}
-	fmt.Printf("json str:%s\n", data) //json str:{"id":1,"Gender":"男"}
+	fmt.Printf("json str:%s\n", data) //json str:{"id":1,"Gender":"男"}打印出的是标签值
 }

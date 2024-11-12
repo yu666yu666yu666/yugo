@@ -48,4 +48,6 @@ func main() {
 		return
 	}
 	fmt.Printf("%#v\n", c1)
+
+	tag()
 }
