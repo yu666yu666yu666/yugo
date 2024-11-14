@@ -69,7 +69,8 @@ func do(wf, rf func(), wc, rc int) {
 
 // 在某些场景下我们需要确保某些操作即使在高并发的场景下也只会被执行一次，例如只加载一次配置文件等。
 // 下面是借助sync.Once实现的并发安全的单例模式：
-
+// func (o*Once) Do(f func())
+// 如果要执行的函数f需要传递参数就需要搭配闭包来使用。
 type singleton struct{}
 
 var instance *singleton
