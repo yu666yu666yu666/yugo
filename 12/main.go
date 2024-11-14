@@ -34,4 +34,5 @@ func main() {
 		}(i)
 	}
 	wg.Wait()
+	freeadd()
 }
