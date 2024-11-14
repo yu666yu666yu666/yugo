@@ -66,3 +66,18 @@ func do(wf, rf func(), wc, rc int) {
 	fmt.Printf("x:%v cost:%v\n", x, cost)
 
 }
+
+// 在某些场景下我们需要确保某些操作即使在高并发的场景下也只会被执行一次，例如只加载一次配置文件等。
+// 下面是借助sync.Once实现的并发安全的单例模式：
+
+type singleton struct{}
+
+var instance *singleton
+var once sync.Once
+
+func GetInstance() *singleton {
+	once.Do(func() {
+		instance = &singleton{}
+	})
+	return instance
+}
